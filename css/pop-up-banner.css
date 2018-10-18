@@ -1,0 +1,266 @@
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width:320px) {
+    
+        label {
+        
+        font-size: 0.9rem;
+        
+                }
+    
+    
+    .popup-cancel {
+        
+        display: block;
+        color: #ff0000;
+        font-weight: 400;
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+        padding-top:2rem;
+        
+    }
+    
+    .popup-cancel:hover {
+        
+        text-decoration: none;
+        color: #cc0000;
+        
+    }
+    
+        #banner_pop_up {
+
+            display: none;
+            z-index: 99;    
+            position: fixed;
+            height:100vh;
+            overflow:auto;
+
+            padding-top:2rem;
+            padding-bottom:4rem;
+            
+            background-color: rgba(0,0,0,0.2);
+            
+        }
+    
+    
+
+    
+        #banner_pop_up .row {
+
+            padding-bottom: 0;
+
+        }
+        
+        #banner_pop_up .popup-form-banner {
+            
+            background-color:#ffffff;
+            border-radius:5px;
+            padding-bottom:2rem;
+            
+        }
+    
+
+    
+        #banner_pop_up .form-header {
+            
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            padding:2.5rem 1rem 1rem 1rem;
+            margin-bottom:1rem;
+            background-color: #000;
+            background-image: url(../assets/images/popup.jpg);
+            background-size:cover;
+            color: #ffffff;
+        }
+
+         #banner_pop_up .form-header h2 {
+
+            font-size: 1.6rem;
+
+        }
+    
+         #banner_pop_up .form-header h6 {
+
+            font-weight:400;
+            font-size:0.9rem;
+
+        }
+
+        #banner_pop_up .main-button {
+            
+            border:none;
+            margin-bottom: 0;
+            
+        }
+
+        #banner_pop_up form{
+            
+            margin-bottom:2rem;
+            
+        }
+    
+        #banner_pop_up .form-group{
+
+            margin: 0;
+            padding-bottom:1rem;
+
+        }
+
+        
+        #banner_pop_up option {
+            
+            font-size:0.9rem;
+            border-bottom:1px solid #000000;
+            
+        }
+    
+        #banner_pop_up .form-control {
+            
+            vertical-align: middle;
+            padding-top:0.3rem;
+            
+            
+        }
+    
+        #banner_pop_up #inputState {
+            
+            font-size:0.9rem;
+            
+        }
+        
+        
+/*        Bullet Point*/
+    
+    
+    #banner_pop_up .check-ch {
+        
+        display: block;
+        padding-bottom:0.8rem;
+        margin-right:2rem;
+        
+    }
+    
+    #banner_pop_up .check-i {
+        
+        margin-right:5px;
+        
+    }
+    
+    #banner_pop_up .form-check-label {
+        font-size:0.8rem;
+        color: #6a6a6a;
+        
+    }
+    
+    
+    .popup-bottom .form-group{
+        
+        display: flex;
+        padding-top:1rem;
+        border-top:1px solid #eeeeee;
+        border-bottom:1px solid #eeeeee;
+        
+    }
+ 
+    
+}
+
+@media (min-width: 576px) {
+    
+        .popup-cancel {
+        
+        padding-left:1rem;
+        
+    }
+    
+    #banner_pop_up .form-header {
+
+            padding:5rem 4rem 1rem 4rem;
+
+        }
+    
+     #banner_pop_up .check-ch-m {
+       
+        display: flex;
+        
+    }
+
+    #banner_pop_up form {
+            
+            margin-bottom:1.4rem;
+            
+        }
+
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    
+    #banner_pop_up {
+        
+        padding:0;
+        align-items:center;
+        
+    }
+    .banner-buttons .main-button {
+        
+         width: initial;
+        
+    }
+        
+    
+        
+    .popup-cancel {
+
+        margin:0;
+        display: inline-block;
+        text-align: left;
+        padding-top: 0;
+        
+    }
+    
+    #banner_pop_up .main-button {
+        
+        width: initial;
+        
+    }
+    
+    #banner_pop_up .form-header {
+            
+            padding:2.5rem 3rem 1rem 3rem;
+
+    }
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    
+    #banner_pop_up .check-ch {
+        
+        padding-top:0.3rem;
+        padding-bottom:1rem;
+        
+    }
+    
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    
+        #banner_pop_up .form-header {
+            
+            padding-top:4rem;
+
+        }
+
+}
+
+
