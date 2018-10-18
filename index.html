@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pop-up-banner.css">
+    
 
 
 </head>
@@ -29,9 +31,138 @@
 
 
     <!----- Спасибо что открыли файл. Сайт сделан Русланом Пашинским. https://www.freelancer.com/u/Stunja ----->
+    
+    
+    
+    
+    
+    <div class="container-fluid" id="banner_pop_up">
+       
+        <div class="row">
+           
+            <div class="col-xs-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-xl-6 offset-xl-3">
+               
+                <div class="popup-form-banner">
+                   
+                          <div class="form-header text-center">
+                        
+                            <h2>Заявка на Ремонт</h2>
+                            <h6>Заполнив заявку на ремонт, вы сможете ускорить оформление диагностики или ремонта</h6>
+                            
+                    </div>
+                    
+                    <div class="col-10 offset-1">
 
 
 
+                        <!--                 Поля для Формы  -->
+                        <form class="row">
+                            <!--     Name-->
+                            <div class="form-group col-md-6 col-xs-12 col-sm-12">
+
+                                <label for="formGroupExampleInput">Имя</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                            <!--          Family-->
+                            <div class="form-group col-md-6 col-xs-12 col-sm-12">
+                                <label>Фамилия</label>
+                                <input type="text" class="form-control" placeholder="">
+                            </div>
+                            <!--      Telephone-->
+                            <div class="form-group col-lg-6 col-xs-12 col-sm-6">
+                                <label>Телефон</label>
+                                <input type="text" class="form-control" placeholder="(+38) XXX-XXXX-XXX)">
+                                <small id="emailHelp" class="form-text text-muted pl-2">Мы будет отправлять СМС уведомление по ходу работы.</small>
+                            </div>
+
+                            <!--      Почтовый Ящик-->
+                            <div class="form-group col-lg-6 col-xs-12 col-sm-6">
+                                <label>Почтовый Ящик</label>
+                                <input type="text" class="form-control" placeholder="">
+                                <small id="emailHelp" class="form-text text-muted pl-2">Мы продублируем уведомление на ваш почтовый ящик.</small>
+                            </div>
+
+                            <!--      Устройство-->
+
+                            <div class="form-group  col-lg-6 col-xs-12 col-sm-6">
+                                <label for="inputState">Устройство</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Планшет</option>
+                                    <option>Принтер</option>
+                                    <option>ПК</option>
+                                    <option>Ноутбук</option>
+                                    <option>Холодиль</option>
+                                </select>
+                            </div>
+                            <!--               Model-->
+                            <div class="form-group col-lg-6 col-xs-12 col-sm-6">
+                                <label for="inputState">Модель</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Версия 1</option>
+                                    <option>Версия 2</option>
+                                    <option>Версия 3</option>
+                                    <option>Версия 4</option>
+                                </select>
+                            </div>
+                            <!--                Услуги-->
+                            <div class="form-group col-lg-12 col-xs-12 col-sm-12">
+                                <label for="inputState">Тип Услуги</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Диагностика</option>
+                                    <option>Ремонт</option>
+                                </select>
+
+                            </div>
+
+
+                            <!--              Bullet Box-->
+
+    <div class="popup-bottom col-xs-12 col-sm-12 col-md-12">
+
+            <div class="check-ch-m">
+    
+           <div class="check-ch">
+               
+                <input type="checkbox" class="check-i" />
+                <label class="form-check-label">Личный Вызов Мастер</label>
+                
+                
+            </div>
+              
+            <div class="check-ch">
+               
+               <input type="checkbox" class="check-i" />
+                <label class="form-check-label">Доставка к вам</label>
+                
+            </div>
+</div>
+          
+
+          <div class="form-group">
+
+                <input type="checkbox" class="mr-2 mt-1"/>
+                <label class="form-check-label" for="exampleCheck1">Я примаю <a href="#" style="font-weight:450;">условия пользования сайтом</a> и даю согласие на использование моих персональных данных</label>
+
+             </div>
+
+                </div>
+
+
+                        </form>
+
+                        <button class="button main-button">Отправить Заявку</button>
+                        
+                        <a class="popup-cancel" href="#" onclick="closeForm()">Отменить</a>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
     <div class="top-fixed">
         <section id="top_wrapper">
             <div class="top-wrapper-left">
@@ -126,16 +257,24 @@
     <!-- Banner Wrapper -->
 
     <section id="banner_wrapper">
-
+        
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-lg-10 col-xl-6">
                 <article class="banner-content">
-                    <h1><a href="#" class="text-highlight">Сервисный центр ERC</a> - один из крупнейших сервисных центров на Украине.</h1>
+                   
+                    <h1>
+                    <a href="#" class="text-highlight">Сервисный центр ERC</a> - один из крупнейших сервисных центров на Украине.
+                    </h1>
+                    
                     <p>Мы предлагаем, помимо стандартных гарантийных и послегарантийных ремонтов, услуги по инсталляции оборудования и техническому обслуживанию. Специальные предложения по сервисному обслуживанию корпоративных заказчиков.</p>
 
                     <div class="banner-buttons">
+
+                        <button href="#" class="main-button button" onclick="openForm()">Заполнить заявку на Ремонт
+                        </button>
+                        
                         <a href="#" class="main-button button">Состояние заказа</a>
-                        <a href="#" class="main-button button">Заполнить заявку на Ремонт</a>
+                        
                     </div>
 
                 </article>
@@ -144,8 +283,6 @@
 
         </div>
     </section>
-
-
 
 
 
@@ -222,7 +359,7 @@
         </div>
 
 
-        <a for="collapseOne" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="logo-button col-xl-12"> Показать Полный Список</a>
+        <a for="collapseOne" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="logo_button" class="col-xl-12" data-text-swap="Уменьшить Список">Показать Всёх Партнеров</a>
 
 
     </section>
@@ -327,85 +464,6 @@
 
     <!---------------------------------- News -------------------------------------->
 
-<!--
-    <section id="news">
-
-
-        <div class="container">
-            <div class="row">
-
-                <h2 class="col-12">Публикации и Новости</h2>
-
-                <div class="col-md-4 col-lg-4 news-box">
-
-
-                    <div class="news-image news-1">
-                        <a href="#">Новости</a>
-                    </div>
-
-                    <div class="news-content">
-                        <h4>Сервіс Центр ERC <br> представляє освітню програму - "Сервіс Очима Дітей"</h4>
-                        <p>Цього разу, до нас у гості, на проект "Сервіс очима дітей" завітали учні "RobotSchool".
-                            Не зважаючи на свій досить малий вік, ці маленькі розумники порадували нас своєю ерудованістю та кмітливістю.</p>
-
-                        <div class="news-box-content-bottom d-flex justify-content-between">
-                            <h6>24.06.2018</h6><a href="#" class="general-link">Читать Дальше ></a>
-                        </div>
-                    </div>
-
-
-
-                </div>
-                <div class="col-md-4 col-lg-4 news-box">
-
-
-                    <div class="news-image news-2">
-                        <a href="#" class="green-button">ERC Magazine</a>
-                    </div>
-                    <div class="news-content">
-                        <h4>Профилактика устройств и важность чистки ноутбуков от пыли.</h4>
-                        <p>
-                            Очень многие пользователи ошибочно полагают, что ноутбуки не требуют профилактики и поломки по причине загрязнения им не грозят. Но, как показывает статистика основной процент обращений в Сервисный центр это поломки произошедшие по причине самих владельцев.
-                        </p>
-                        <div class="news-box-content-bottom d-flex justify-content-between">
-
-                            <h6>24.06.2018</h6><a href="#" class="general-link">Читать Дальше ></a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-md-4 col-lg-4 news-box">
-
-
-                    <div class="news-image news-3">
-                        <a href="#" class="orange-button">Акції</a>
-                    </div>
-
-                    <div class="news-content">
-                        <h4>Что такое HP Care Pack? Cервисный продукт расширяющий гарантию HP</h4>
-
-                        <p>
-
-                            HP Care Pack предлагает несколько уровней поддержки: от обслуживания в сервисном центре до фиксированного времени ремонта оборудования. Более детально с пакетами услуг можно ознакомится на официальном сайте:
-
-                        </p>
-
-                        <div class="news-box-content-bottom d-flex justify-content-between">
-                            <h6>24.06.2018</h6><a href="#" class="general-link">Читать Дальше ></a>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <a class="mx-auto text-center link-a main-button button" href="#">Все Публикации</a>
-
-            </div>
-        </div>
-
-    </section>
--->
 <section id="news">
 
 
@@ -439,7 +497,7 @@
                     </div>
                         <h4>Профилактика устройств и важность чистки ноутбуков от пыли.</h4>
                         <p>
-                            Очень многие пользователи ошибочно полагают, что ноутбуки не требуют профилактики и поломки по причине загрязнения им не грозят. 
+                            Очень многие пользователи ошибочно полагают, что ноутбуки не требуют профилактики и поломки по причине загрязнения им не грозят. В этой статье мы расскажем, как продлить жизнь вашей машине.
                         </p>
                         <div class="news-box-content-bottom">
 
@@ -587,6 +645,29 @@
         </div>
     </section>
 
+    <!-----------------  Newsletter Section  ----------------------------------------
+   <section id="newsletter">
+       <div class="container">
+           <div class="d-flex justify-content-between">
+           
+           <h5 class="col-xl-6">Подпишитесь на нашу новостную рассылку</h5>
+           
+           <div class="input-group col-xl-6">
+			  <input type="text" class="form-control" placeholder="Ваш E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+			  <div class="input-group-append">
+				<button class="second-button button" type="button">Отправить</button>
+			  </div>
+			</div>
+          
+          </div>
+           
+          
+       </div>
+   </section>
+   
+   --->
+
 
     <!---------------------------------- Footer -------------------------------------->
 
@@ -603,9 +684,9 @@
                 <div class="social-icons">
 
                     <a href="#"><img src="./assets/icons/social-media/facebook.svg" alt="Facebook Icon"></a>
-                    <a href="#"><img src="./assets/icons/social-media/youtube.svg" alt="Youtube Icon"></a>
+                    <a href="https://www.youtube.com/channel/UCUNxLix4a57QvCLeatscArQ"><img src="./assets/icons/social-media/youtube.svg" alt="Youtube Icon"></a>
                     <a href="#"><img src="./assets/icons/social-media/linkedin.svg" alt="LinkedIn Icon"></a>
-                    <a href="#"><img src="./assets/icons/social-media/linkedin.svg" alt="LinkedIn Icon"></a>
+                    <a href="#"><img src="./assets/icons/social-media/google-plus.svg" alt="Google Plus"></a>
                     <a href="#"><img src="./assets/icons/social-media/email.svg" alt="Email Subcribe"></a>
 
                 </div>
@@ -706,7 +787,7 @@
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-
+    <script src="js/main.js"></script>
 
 </body>
 
